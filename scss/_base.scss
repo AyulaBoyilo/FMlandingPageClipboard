@@ -1,0 +1,79 @@
+@import "colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: $grayish-blue;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grayish-blue;
+}
+
+@mixin btn-main {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  transition: border-bottom 0.2s;
+}
+
+.btn {
+  &-ios {
+    @include btn-main;
+
+    background-color: $strong-cyan;
+    border-bottom: 4px inset darken($color: $strong-cyan, $amount: 7);
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: darken($color: $strong-cyan, $amount: 3);
+      border-bottom: 4px inset darken($color: $strong-cyan, $amount: 10);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+
+  &-mac {
+    @include btn-main;
+
+    background-color: $light-blue;
+    border-bottom: 4px inset darken($color: $light-blue, $amount: 7);
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: darken($color: $light-blue, $amount: 3);
+      border-bottom: 4px inset darken($color: $light-blue, $amount: 10);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.buttons {
+  margin-top: 50px;
+}

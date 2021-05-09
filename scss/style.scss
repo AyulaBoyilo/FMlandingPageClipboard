@@ -1,0 +1,156 @@
+@import "base";
+@import "colors";
+
+header,
+main,
+footer {
+  padding: 25px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  max-width: 325px;
+  margin: auto;
+}
+
+// Header with logo
+header {
+  background: url("../images/bg-header-mobile.png") no-repeat center center /
+    cover;
+
+  img {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-top: 70px;
+  }
+}
+
+// Snippets
+.snippets {
+  margin: 70px auto;
+}
+
+// Desktop features
+.desktop {
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+}
+
+// Tablet & Mobile
+.tablet {
+  margin: 150px auto 100px auto;
+
+  img {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+// Tools with icons
+.tools {
+  .icon-box {
+    margin-top: 30px;
+
+    img {
+      margin: 40px auto 20px auto;
+    }
+  }
+}
+
+// Client logos
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+
+  img {
+    margin-bottom: 70px;
+  }
+}
+
+// Download
+.download {
+  margin: 150px auto;
+}
+
+// Footer
+footer {
+  background-color: lighten($color: $grayish-blue, $amount: 30);
+
+  .footer-main {
+    padding: 30px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 30px 0;
+
+    a {
+      margin: 10px 0;
+      font-size: 15px;
+      color: $dark-grayish-blue;
+
+      &:visited {
+        color: $dark-grayish-blue;
+      }
+
+      &:hover {
+        color: $strong-cyan;
+      }
+    }
+  }
+
+  .social-links {
+    a {
+      margin: 15px;
+      height: 25px;
+
+      i {
+        font-size: 25px;
+      }
+
+      i:hover {
+        color: $strong-cyan;
+      }
+    }
+  }
+
+  img {
+    width: 40px;
+  }
+}
+
+.footer-attribution {
+  background-color: lighten($color: $grayish-blue, $amount: 20);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    color: $dark-grayish-blue;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+// Tablets media query
+@import "tablets";
+// Desktop media query
+@import "desktop";

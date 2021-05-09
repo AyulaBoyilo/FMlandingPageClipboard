@@ -1,0 +1,48 @@
+@media screen and (min-width: 600px) {
+  .btn-ios,
+  .btn-mac {
+    width: 230px;
+    margin: 0 7px;
+  }
+
+  .buttons {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    max-width: min(500px, 60vw);
+    margin: 20px auto;
+  }
+
+  h1,
+  h2 {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .desktop,
+  .tablet {
+    img {
+      width: 75%;
+    }
+  }
+
+  .clients {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 150px auto 0 auto;
+
+    img {
+      padding: 40px;
+    }
+  }
+
+  .download {
+    margin-top: 100px;
+  }
+}

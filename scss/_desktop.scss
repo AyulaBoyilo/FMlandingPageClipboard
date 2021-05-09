@@ -1,0 +1,115 @@
+@media screen and (min-width: 1025px) {
+  p {
+    font-size: 18px;
+    max-width: 700px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  header {
+    background: url("../images/bg-header-desktop.png") no-repeat center center /
+      cover;
+
+    img {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 45px;
+      margin-top: 70px;
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 700px;
+    }
+  }
+
+  .desktop {
+    display: flex;
+    padding: 0;
+    .first {
+      width: 50vw;
+      img {
+        width: 100%;
+        position: relative;
+        left: -70px;
+      }
+    }
+    .second {
+      text-align: left;
+      padding-left: 5vw;
+
+      p {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .tablet {
+    img {
+      width: 60vw;
+    }
+  }
+
+  .tools {
+    padding: 0 7vw;
+    margin-bottom: 150px;
+    .icons {
+      display: flex;
+      justify-content: space-between;
+
+      .icon-box {
+        width: 25vw;
+      }
+    }
+  }
+
+  .clients {
+    width: 85vw;
+    margin: 0 auto;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: space-between;
+  }
+
+  footer {
+    padding: 0;
+
+    .footer-main {
+      width: 80vw;
+      margin: auto;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 50px;
+      }
+
+      .links {
+        // column-count: 3;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        // justify-content: flex-start;
+        width: 50vw;
+        height: 70px;
+        // padding-right: ;
+        // margin: 0 0 0 40px;
+        a {
+          width: 100px;
+          height: 27px;
+          margin: 0 70px 0 0;
+          flex: 0.5;
+          text-align: left;
+          padding: 10px 0 10px 0;
+        }
+      }
+    }
+  }
+}
